@@ -12,4 +12,4 @@ script:
 
 after_success:
   - LIGHTHOUSE_URL=$(now deploy --token=$NOW_TOKEN)
-  - npm run lh -- $LIGHTHOUSE_URL
+  - yarn lh -- $LIGHTHOUSE_URL
