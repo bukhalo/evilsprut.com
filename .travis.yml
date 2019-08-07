@@ -13,4 +13,4 @@ script:
 
 after_success:
   - now deploy --target staging --token=$NOW_TOKEN
-  - npm run lh -- https://blog.bukhalo.com
+  - npm run lh -- https://blogbukhalocom.bukhalo.now.sh
