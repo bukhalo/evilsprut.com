@@ -9,7 +9,7 @@ node_js:
 
 script:
   - npm install
-  - npm run lint
+  # - npm run lint
 
 after_success:
   - now deploy --target staging --token=$NOW_TOKEN
