@@ -8,16 +8,21 @@ node_js:
   - "node"
 
 stages:
-  - build
-  - test
+  - name: Build
+  - name: Test
 
 jobs:
   include:
-    - stage: build
-      script: yarn
-    - stage: test
+    - stage: Build
+      script: echo "build"
+
+    - stage: Test
+      name: "Dump test"
+      script: echo "dump test"
+
+    - stage: Test
       name: "Lighthouse"
       if: type = pull_request
       script:
         - LIGHTHOUSE_URL=$(now deploy --token=$NOW_TOKEN)
-        - yarn lh -- $LIGHTHOUSE_URL
+        - yarn lh $LIGHTHOUSE_URL
