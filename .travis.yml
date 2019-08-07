@@ -7,9 +7,13 @@ os:
 node_js:
   - "node"
 
-script:
-  - yarn
-
-after_success:
-  - LIGHTHOUSE_URL=$(now deploy --token=$NOW_TOKEN)
-  - yarn lh -- $LIGHTHOUSE_URL
+jobs:
+  include:
+    - stage: "Build"
+      script: yarn
+    - stage: "Tests"
+      name: "Lighthouse"
+      if: type = pull_request
+      script:
+        - LIGHTHOUSE_URL=$(now deploy --token=$NOW_TOKEN)
+        - yarn lh -- $LIGHTHOUSE_URL
