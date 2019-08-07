@@ -8,9 +8,8 @@ node_js:
   - "node"
 
 script:
-  - npm install
-  # - npm run lint
+  - yarn
 
 after_success:
-  - now deploy --target staging --token=$NOW_TOKEN
-  - npm run lh -- https://blogbukhalocom.bukhalo.now.sh
+  - LIGHTHOUSE_URL=$(now deploy --token=$NOW_TOKEN)
+  - npm run lh -- $LIGHTHOUSE_URL
