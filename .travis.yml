@@ -21,4 +21,4 @@ jobs:
       if: type = pull_request
       script:
         - LIGHTHOUSE_URL=$(now deploy --token=$NOW_TOKEN)
-        - yarn lh $LIGHTHOUSE_URL
+        - lighthousebot $LIGHTHOUSE_URL

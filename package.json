@@ -60,8 +60,7 @@
     "build": "rm -rf public && rm -rf .cache && gatsby build",
     "deploy": "yarn build && cp now.json public/ && cd public && now alias $(now) overreacted.io",
     "now-build": "yarn build",
-    "dry": "yarn build && cp now.json public/ && cd public && now",
-    "lh": "lighthousebot"
+    "dry": "yarn build && cp now.json public/ && cd public && now"
   },
   "husky": {
     "hooks": {
