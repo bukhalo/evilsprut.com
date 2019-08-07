@@ -7,11 +7,15 @@ os:
 node_js:
   - "node"
 
+stages:
+  - build
+  - test
+
 jobs:
   include:
-    - stage: "Build"
+    - stage: build
       script: yarn
-    - stage: "Tests"
+    - stage: test
       name: "Lighthouse"
       if: type = pull_request
       script:
