@@ -6,7 +6,6 @@ import '../fonts/fonts-post.css';
 import Bio from '../components/organisms/bio/bio';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-// import Signup from '../components/Signup';
 import { formatPostDate, formatReadingTime } from '../utils/helpers';
 import { rhythm, scale } from '../utils/typography';
 import {
