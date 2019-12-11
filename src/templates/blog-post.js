@@ -3,7 +3,7 @@ import { Link, graphql } from 'gatsby';
 import get from 'lodash/get';
 
 import '../fonts/fonts-post.css';
-import Bio from '../components/Bio';
+import Bio from '../components/organisms/bio/bio';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 // import Signup from '../components/Signup';
