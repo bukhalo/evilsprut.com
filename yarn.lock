@@ -2115,12 +2115,14 @@ babel-plugin-transform-react-remove-prop-types@^0.4.24:
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-react-remove-prop-types/-/babel-plugin-transform-react-remove-prop-types-0.4.24.tgz#f2edaf9b4c6a5fbe5c1d678bfb531078c1555f3a"
   integrity sha512-eqj0hVcJUR57/Ug2zE1Yswsw4LhuqqHhD+8v120T1cl3kjg76QwtyBrdIk4WVwK+lAhBJVYCd/v+4nc4y+8JsA==
 
-babel-preset-gatsby@^0.2.25:
-  version "0.2.25"
-  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.2.25.tgz#f6e44d395360ddcd44c9683275e257c2fd3fe54f"
-  integrity sha512-ulbEgXeMYhDWnc29AQGSSCwqmou+iJWOi3MPH6/oMoek6iukIZ0EBsN0UMBgbTkWIzV15RLU0iEM5R78sZTa2g==
+babel-preset-gatsby@^0.2.26:
+  version "0.2.26"
+  resolved "https://registry.yarnpkg.com/babel-preset-gatsby/-/babel-preset-gatsby-0.2.26.tgz#b27344c938cb5a20c81f4be134dde5f5b93ca256"
+  integrity sha512-qOM26AhAPW5xetUj579jBFICg16sqFHf3dPptRXi3zS7HpEHbtsOvB9VB68MEUj+WZrrlbR/EQuT69GA1XiBdQ==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.7.4"
+    "@babel/plugin-proposal-nullish-coalescing-operator" "^7.7.4"
+    "@babel/plugin-proposal-optional-chaining" "^7.7.5"
     "@babel/plugin-syntax-dynamic-import" "^7.7.4"
     "@babel/plugin-transform-runtime" "^7.7.6"
     "@babel/plugin-transform-spread" "^7.7.4"
@@ -5435,10 +5437,10 @@ g-status@^2.0.2:
     matcher "^1.0.0"
     simple-git "^1.85.0"
 
-gatsby-cli@^2.8.18:
-  version "2.8.18"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.8.18.tgz#0e517ebb478023b14001b46b4d463892779005d6"
-  integrity sha512-LN0PW3OrI8QQ/9+65oNhT1gi7jJAljT4YZSbTE1mqcaSIkH8NryeccI64LcTOydHtSJFHsE2fanmmIl/nmAdgg==
+gatsby-cli@^2.8.19:
+  version "2.8.19"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-2.8.19.tgz#91d70149a0293a8af970df8b65d307970030c990"
+  integrity sha512-cINizncxPBxL3tJAQVrVFCGrf/dFOFEk5o1uYr427zyLuC+jqaAtocE2AcT1P9ayXOEjyH4mP/INwaNfCbYkJg==
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/runtime" "^7.7.6"
@@ -5808,10 +5810,10 @@ gatsby-transformer-sharp@^2.2.6:
     semver "^5.7.1"
     sharp "^0.23.4"
 
-gatsby@^2.18.7:
-  version "2.18.10"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.18.10.tgz#8c9f24208629643e5087b498cf043dc11155b8c2"
-  integrity sha512-ImcCvk63/Ns+Y8UYfg90Iyva8hcCQaQNnWJnk39eWmGnT1He/lBJctZQDNWey7S0bJ5dLPo65+WxeN+ZR6lazA==
+gatsby@^2.18.12:
+  version "2.18.12"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.18.12.tgz#caae4482aab2e30b75b30a0e96b7eb1dd21e6f42"
+  integrity sha512-EmgSDZcedoUttw/ETEWWgRT0B7GUulsi3h8HwRDqNSMtHMJtk8SH9Vb5MWfQQZlZ2pteV9g8P4kv/bffCYKIbw==
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/core" "^7.7.5"
@@ -5834,7 +5836,7 @@ gatsby@^2.18.7:
     babel-plugin-add-module-exports "^0.3.3"
     babel-plugin-dynamic-import-node "^2.3.0"
     babel-plugin-remove-graphql-queries "^2.7.19"
-    babel-preset-gatsby "^0.2.25"
+    babel-preset-gatsby "^0.2.26"
     better-opn "1.0.0"
     better-queue "^3.8.10"
     bluebird "^3.7.2"
@@ -5872,7 +5874,7 @@ gatsby@^2.18.7:
     flat "^4.1.0"
     fs-exists-cached "1.0.0"
     fs-extra "^8.1.0"
-    gatsby-cli "^2.8.18"
+    gatsby-cli "^2.8.19"
     gatsby-core-utils "^1.0.24"
     gatsby-graphiql-explorer "^0.2.31"
     gatsby-link "^2.2.27"
