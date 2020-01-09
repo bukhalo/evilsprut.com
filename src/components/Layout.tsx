@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import styled from 'styled-components';
 import { Link as gatsbyLink } from 'gatsby';
 import ThemeToggle from './atoms/theme-toggle/theme-toggle';
@@ -56,7 +56,7 @@ const HeaderLinkInternal = styled(gatsbyLink)`
   box-shadow: none;
 `;
 
-class Layout extends React.Component {
+export class Layout extends React.Component {
   state = {
     theme: null,
   };
