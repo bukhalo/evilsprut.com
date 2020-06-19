@@ -33,7 +33,7 @@
     "gatsby-source-filesystem": "2.2.1",
     "gatsby-transformer-remark": "2.7.0",
     "gatsby-transformer-sharp": "2.4.1",
-    "husky": "4.2.3",
+    "husky": "4.2.5",
     "lint-staged": "10.0.8",
     "lodash": "4.17.15",
     "numeralize-ru": "1.0.1",
