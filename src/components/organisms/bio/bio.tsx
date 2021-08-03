@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import profilePic from '../../../assets/profile-pic.jpg';
+import profilePic from '../../../assets/profile-pic.jpeg';
 import { rhythm } from '../../../utils/typography';
 
 const Box = styled.div`
@@ -23,10 +23,10 @@ const Title = styled.p`
 export const Bio: React.FC = () => {
   return (
     <Box>
-      <Avatar src={profilePic} alt="evilsprut" />
+      <Avatar src={profilePic} alt="Aleksandr Bukhalo" />
       <Title>
         Personal blog by{' '}
-        <a target="_blank" href="https://t.me/evilsprut">
+        <a target="_blank" href="https://t.me/bukhalo_a">
           Aleksandr Bukhalo
         </a>
         . Smthng&nbsp;about my life

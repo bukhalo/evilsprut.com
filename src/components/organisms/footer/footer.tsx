@@ -35,25 +35,18 @@ export const Footer: React.FC = () => {
       </Right>
       <SocialLinks>
         <Link
-          href="https://github.com/evilsprut"
+          href="https://github.com/bukhalo"
           target="_blank"
           rel="noopener noreferrer"
         >
           github
         </Link>
         <Link
-          href="https://t.me/evilsprut"
+          href="https://t.me/bukhalo_a"
           target="_blank"
           rel="noopener noreferrer"
         >
           telegram
-        </Link>
-        <Link
-          href="https://twitter.com/evilsprut"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          twitter
         </Link>
       </SocialLinks>
     </Container>

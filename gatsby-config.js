@@ -2,11 +2,11 @@ require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
-    title: 'evilsprut',
+    title: 'Aleksandr Bukhalo',
     author: 'Aleksandr Bukhalo',
     description:
       "I scare people with technology. Writing about things that annoy me. I work as a JavaScript / TypeScript developer. I'm doomed to suffer in search of myself.",
-    siteUrl: 'https://evilsprut.com/',
+    siteUrl: 'https://bukhalo.com/',
     social: {
       twitter: '@evilsprut',
     },
